@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GameOffer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--НАЧАЛО Шапка-->
+    <header class="mainheader">
+        <div class="container">
+
+            <img src="img/logo.png" class="logo">
+
+            <nav class="mainnav">
+                <ul>
+                    <li class="active"><a href="#bestSuggestions">Лучшие предложения</a></li>
+                    <li><a href="#shop">О магазине</a></li>
+                    <li><a href="#phone">Оставить заявку</a></li>
+                    <li><a href="#suggestions">Предложения</a></li>
+                    <li id="selecteditems"><img src="img/cart25.png"> 0 </li>
+                </ul>
+        </div>
+        </nav>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </header>
+    <!--КОНЕЦ Шапка-->
+
+    <main>
+        <div class="container">
+
+            <!--НАЧАЛО Секция "Серии наборов"-->
+            <section id="bestSuggestions">
+                <h2>Лучшие предложения</h2>
+
+                <!--Стреки для листания слайдера-->
+                <img src="img/arrow_right.png" class="slider_arrow_right">
+                <img src="img/arrow_left.png" class="slider_arrow_left">
+
+                <!--НАЧАЛО Обертка для слайдов-->
+                <div class="kit_slides_wrapper">
+
+                    <!-- НАЧАЛО Слайд №1-->
+                    <div class="slide">
+                        <img src="img/series/series1.jpeg" class="sliderImg">
+                        <div class="info">
+                            <h3>Star Wars Battlefront 2</h3>
+                            <p>
+                                Сейчас бесплатно в Epic Games Store
+                            </p>
+                        </div>
+                    </div>
+                    <!-- КОНЕЦ Слайд №1-->
+                </div>
+                <!--КОНЕЦ Обертка для слайдов-->
+            </section>
+            <!--КОНЕЦ Секция "Серии наборов"-->
+
+
+
+            <!--НАЧАЛО Секция "О компании"-->
+            <section id="shop">
+                <h2>О магазине</h2>
+
+                <p>
+                    <strong>GameOffer</strong> - проект, который должен помочь людям и геймерам по всему миру выбирать игры по наиболее низким ценам.
+                </p>
+                <p>
+                    На данный момент в каталоге имеется 6 игр, но каталог будет непрерывно увеличиваться, в том числе при помощи ваших предложений.
+                </p>
+                <p>
+                    На данный момент GameOffer - маленький магазин, но в планах много интересных идей и задумок, о которых вы можете узнать подписавшись на рассылку уведомлений.
+                </p>
+            </section>
+            <!--КОНЕЦ Секция "О компании"-->
+
+
+
+            <!--НАЧАЛО Секция "Оставить заявку"-->
+            <section id="phone">
+                <h2>Заявка на получение уведомлений</h2>
+
+                <!--НАЧАЛО Обертка/флекс-контейнер-->
+                <div class="order-wrapper">
+                    <!--НАЧАЛО Левая часть с полями для ввода-->
+                    <div class="order-form">
+                        <!--Имя-->
+                        <label for="firstname_field">Имя</label>
+                        <input type="text" id="firstname_field">
+                        <!--Фамилия-->
+                        <label for="lastname_field">Фамилия</label>
+                        <input type="text" id="lastname_field">
+                        <!--Номер телефона-->
+                        <label for="phone_field">Телефон</label>
+                        <input type="text" id="phone_field">
+                        <button id="sendInfo">Отправить</button>
+                    </div>
+                    <!--КОНЕЦ Левая часть с полями для ввода-->
+
+                    <!--НАЧАЛО Правая часть с сообщением-->
+                    <div class="order-alert">
+                        <p>
+                            <strong id="names">Уважаемый, Иванов Н.</strong><br>
+                            На указанный номер будет производиться рассылка выгодных предложений. Указанный номер: <strong>
+                                <nobr id="phoneNumber">8 999 123 45 67</nobr>
+                            </strong><br>
+                            Спасибо за обращение!
+                        </p>
+                    </div>
+                    <!--КОНЕЦ Правая часть с сообщением-->
+                </div>
+                <!--КОНЕЦ Обертка/флекс-контейнер-->
+            </section>
+            <!--КОНЕЦ Секция "Оставить заявку"-->
+
+
+
+            <!--НАЧАЛО Секция "Собери комплект"-->
+            <section id="suggestions">
+                <h2>Предложения</h2>
+
+                <!--НАЧАЛО Обертка/флекс-контейнер для товаров-->
+                <div class="goods-wrapper">
+
+                    <!--НАЧАЛО Товар №1-->
+                    <div class="product">
+                        <img src="img/goods/1.webp">
+                        <h4>Rainbow Six Siege</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam accusantium perferendis dicta quisquam! Mollitia temporibus assumenda reiciendis, id. Assumenda velit dolorem, blanditiis accusamus ut odit, voluptate earum suscipit! Aut, alias?</p>
+                        <button id="buy"><img src="img/cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №1-->
+                    <!--НАЧАЛО Товар №2-->
+                    <div class="product">
+                        <img src="img/goods/2.png">
+                        <h4>GTA 5</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequatur alias magni odio consectetur optio ipsam laudantium cumque enim praesentium omnis ipsum, maiores tempore aliquam eos, similique sint quibusdam. Perferendis!</p>
+                        <button id="buy"><img src="img/cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №2-->
+                    <!--НАЧАЛО Товар №3-->
+                    <div class="product">
+                        <img src="img/goods/3.png">
+                        <h4>Cyberpunk 2077</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure, laborum necessitatibus possimus animi, vitae adipisci aut incidunt aliquam aspernatur itaque fugiat fuga temporibus labore tempore aliquid sit hic dolore.</p>
+                        <button id="buy"><img src="img/cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №3-->
+
+                    <!--НАЧАЛО Товар №4-->
+                    <div class="product">
+                        <img src="img/goods/4.png">
+                        <h4>Hitman 3</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum ab omnis obcaecati neque aliquid consequatur pariatur ut voluptas tempore in non fugit exercitationem id similique quia, veniam maxime ex.</p>
+                        <button id="buy"><img src="img/cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №4-->
+                    <!--НАЧАЛО Товар №5-->
+                    <div class="product">
+                        <img src="img/goods/5.png">
+                        <h4>Phasmophobia</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ullam consectetur minima ipsam quam voluptatum tempora ducimus, aspernatur ex, labore maiores cum vero excepturi fuga architecto odio assumenda numquam similique.</p>
+                        <button id="buy"><img src="img/cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №5-->
+                    <!--НАЧАЛО Товар №6-->
+                    <div class="product">
+                        <img src="img/goods/6.png">
+                        <h4>CoD: Warzone</h4>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cumque autem repellendus pariatur, atque et iure facilis necessitatibus, provident laboriosam beatae ad totam animi consectetur numquam debitis est. Consequuntur, expedita.</p>
+                        <button id="buy"><img src="img/cart16.png"></button>
+                    </div>
+                    <!--КОНЕЦ Товар №6-->
+                </div>
+                <!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
+            </section>
+            <!--КОНЕЦ Секция "Собери комплект"-->
+
+        </div>
+    </main>
+
+    <script>
+        "use strict";
+
+        sendInfo.addEventListener('click', function() {
+            let name = "name";
+            let surname;
+            let phoneNum;
+
+            name = firstname_field.value;
+
+            surname = lastname_field.value;
+
+            phoneNum = phone_field.value;
+
+            names.innerHTML = "Уважаемый " + surname + " " + name[0] + ".";
+            phoneNumber.innerHTML = phoneNum;
+            
+            order-alert.style.display = "block";
+        });
+
+        buy.addEventListener('click', function() {
+            let num;
+            num = parseInt(selecteditems.value);
+            num = num + 1;
+            selecteditems.innerHTML = num;
+        });
+
+        window.addEventListener('scroll', function() {
+            myFunction()
+        });
+
+        function myFunction() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            myBar.style.width = scrolled + "%";
+        }
+
+        window.addEventListener('scroll', function() {
+            pageYOffset;
+        });
+
+    </script>
+
+</body>
+
+</html>
